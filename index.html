@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Rating Widget</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="star-rating" data-rating="0">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+  </div>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton">Search</button>
+  </div>
+  <div id="searchResults"></div>
+
+  <div class="container">
+    <div class="bar" style="width: 25%;"></div>
+    <div class="bar" style="width: 50%;"></div>
+    <div class="bar" style="width: 75%;"></div>
+  </div>
+  <div class="container">
+    <span id="likeText">0</span>
+    <button id="likeButton">Like</button>
+
+    <button id="likeButton" class="like-button">
+      <span id="likeIcon" class="like-icon">👍</span>
+      <span id="likeCount" class="like-count">0</span>
+    </button>
+  </div>
+
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
